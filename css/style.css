@@ -1,0 +1,752 @@
+body
+{
+    background: #e5e5e5;
+    font-family: 'Roboto', thin;
+    height: 3800px;
+}
+
+/*MenuButton*/
+a.nav-expander
+{
+    background: #ffffff;
+    color: #ffffff;
+    font-size: 15px;
+    height: 50px;
+    width: 130px;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 49px;
+    padding-right: 49px;
+    position: absolute;
+    text-decoration: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: 12;
+
+    -webkit-transition: right 0.3s ease-in-out 0s, background 1s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s, background 1s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s, background 1s ease-in-out 0s;
+    transition: right 0.3s ease-in-out 0s, background 1s ease-in-out 0s;
+
+}
+ 
+a.nav-expander:hover
+{
+    background: #e5e5e5;
+    cursor: pointer;
+    
+    -webkit-transition: right 0.3s ease-in-out 0s, , background 0.4s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s, background 0.4s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s, background 0.4s ease-in-out 0s;
+    transition: right 0.3s ease-in-out 0s, background 0.4s ease-in-out 0s;
+    
+}
+
+/*menu button lines*/
+#menuButton, #menuButtonTop, #menuButtonBottom
+{
+    height: 2px;
+    background: #000000;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 6px;
+    margin-top: 6px;
+    
+    -webkit-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -moz-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -o-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+}
+
+a.nav-expander:hover #menuButtonTop, a.nav-expander:hover #menuButtonBottom
+{
+    margin-left: 25%;
+    width: 50%;
+    background: #ff3b3f;
+    
+    -webkit-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -moz-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -o-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+}
+
+a.nav-expander:hover #menuButton
+{
+    background: #ff3b3f;
+}
+ 
+/*menu button movement*/
+ 
+.nav-expanded a.nav-expander.fixed
+{
+    right: 20em;
+}
+
+ 
+body.nav-expanded
+{
+    margin-left: 0em;
+    -webkit-transition: right 0.4s ease-in-out 0s;
+    -moz-transition: right 0.4s ease-in-out 0s;
+    -o-transition: right 0.4s ease-in-out 0s;
+    transition: right 0.4s ease-in-out 0s;
+}
+
+
+.navbar-brand
+{
+    right: 0em;
+}
+
+#titleDiv
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0 auto;
+
+    
+}
+
+#titleName
+{
+    font-size: 23px;
+    width: 2500px;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    
+    -webkit-transition: right 0.3s ease-in-out 0s, color 0.4s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s, color 0.4s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s, color 0.4s ease-in-out 0s;
+    transition: right 0.3s ease-in-out 0s, color 0.4s ease-in-out 0s;
+}
+
+#titleName:hover
+{
+    color: #ff3b3f;
+}
+ 
+#nav-close
+{
+    font-family: 'Roboto', thin;
+    font-weight: 300;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.navbar-inverse
+{
+    background-color: #ffffff;
+    border: 0px;
+    
+/*
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .1), transparent);
+    background: -o-linear-gradient(rgba(0, 0, 0, .2), transparent);
+    background: -moz-linear-gradient(rgba(0, 0, 0, .13), transparent);
+    background: linear-gradient(rgba(0, 0, 0, .0), #ffffff);
+*/
+}
+
+/************/
+/*Menu items*/
+/************/
+nav
+{
+  background: #ffffff;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 2000;
+ 
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+
+.nav-expanded nav
+{
+  right: 0;
+}
+
+.main-menu
+{
+    padding-top: 5px;
+}
+
+.main-menu li
+{
+    border-bottom: 1px solid #89e9ff;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 12px;
+}
+
+.main-menu li a
+{
+    color: #000000;
+    text-decoration: none;
+    line-height: 50px;
+    
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+}
+ 
+.main-menu li a:hover
+{
+    color: #ff3b3f;
+    text-decoration: none;
+    
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+}
+ 
+.main-menu li .sub-nav
+{
+  border-bottom: 0px;
+  padding: 4px;
+}
+ 
+.icon:before
+{
+    text-transform: none;
+}
+ 
+.main-menu li > a > span.icon
+{
+    float: right;
+    margin: 0.1em 1.7em -0.1em 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+ 
+}
+ 
+.main-menu li > a:hover >span.icon
+{
+    float: right;
+    margin: 0.1em 0.8em -0.1em 0;
+    opacity: 1;
+}
+
+
+#headerDiv
+{
+    
+    margin-top: 50px;
+/*    border: 1px solid red;*/
+    height: 850px;
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+    
+    
+}
+
+#headerDivImg
+{
+    background-image: url("/misc/reds.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+/*    border: 1px solid green;*/
+}
+
+#whoIs
+{
+    background: transparent;
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 350px;
+    padding-bottom: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#whoIsSpan
+{
+    color: #89e9ff;
+    text-decoration: none;
+    
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+#whoIsSpan:hover
+{
+    color: #00cfff;
+    
+    
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+#gradDiv
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height:5px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #e5e5e5 50%, #a9a9a9 50%);
+}
+
+#gradDivInv
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height:5px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #a9a9a9 50%, #e5e5e5 50%);
+}
+
+#gradLine
+{
+    background: #89e9ff;
+    width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+    
+    background: -webkit-linear-gradient(right, #00cfff, #ff3b3f);
+    background: -o-linear-gradient(right, #00cfff, #ff3b3f);
+    background: -moz-linear-gradient(right, #00cfff, #ff3b3f);
+    background: linear-gradient(to right, #00cfff, #ff3b3f);
+}
+
+#gradDivS
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+#gradLineS
+{
+    background: #89e9ff;
+    width: 500px;
+    height: 3px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+#gradLineSr
+{
+    background: #ff3b3f;
+    width: 500px;
+    height: 3px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+
+#programmerDiv
+{
+    background: #a9a9a9;
+    width: 100%;
+    height: 780px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+}
+
+#progTitle
+{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 10px;
+}
+
+#prodTitle
+{
+    color: #939393;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 10px;
+}
+
+
+#programmingBar
+{
+    width: 100%;
+}
+
+#expRow
+{
+    display: none;
+}
+
+#expRow h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+}
+
+#programming
+{
+    background-image: url("/assets/sitting1s.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    padding-bottom: 100px;
+    
+    height: 660px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#skillsDiv
+{
+    background: transparent;
+    height: 100%;
+}
+
+#skill1
+{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#skill1 h1
+{
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+}
+
+#skill1 h3
+{
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+.btn-default
+{
+    width: 100%;
+}
+
+#skill1 button
+{
+    background: #00cfff;
+    color: #ffffff;
+    max-width: 300px;
+    font-size: 20px;
+    outline: none;
+    border-color: transparent;
+    
+    -webkit-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -moz-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -o-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}
+
+#skill1 button:hover
+{
+    background: #ff3b3f;
+    color: white;
+    outline: none;
+    
+    -webkit-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -moz-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -o-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}
+
+/********************/
+/*Typewriter Section*/
+/********************/
+#progDiv
+{
+    margin: 0 auto;
+    padding: 0;
+    height: 300px;
+}
+
+#progDiv h1
+{
+    text-align: center;
+    color: white;
+}
+
+#skill2
+{
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+#codeExample
+{
+    background: #ffffff;
+    color: #a9a9a9;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#blinker
+{
+    font-size: 45px;
+    animation: blink .8s infinite;
+}
+
+#exampleBox
+{
+    color: #a9a9a9;
+}
+
+@keyframes blink
+{
+    0%
+    {
+        opacity: 0;
+    }
+    
+    50%
+    {
+        opacity: 1;
+    }
+    
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+#producerDiv
+{
+    background: #e5e5e5;
+    width: 100%;
+    height: 780px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+}
+
+#SCDiv
+{
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+#SCEmbeded
+{
+    border-radius: 10px;
+}
+
+#webDesigner
+{
+    background: #a9a9a9;
+    width: 100%;
+    height: 780px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+}
+
+#webExDiv
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#pastWork
+{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#webZoom
+{
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#exPic
+{
+    height: 450px;
+    background-image: url("/misc/demoSite.png");
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+    
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#exPic:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: brightness(80%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#goTo
+{
+    height: 100%;
+    width: 100%;
+    filter: brightness(100);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+    opacity: 0.5;
+    
+    -webkit-transition: opacity 0.2s ease-in-out 0s;
+    -moz-transition: opacity 0.2s ease-in-out 0s;
+    -o-transition: opacity 0.2s ease-in-out 0s;
+    transition: opacity 0.2s ease-in-out 0s;
+    
+}
+
+#goTo:hover
+{
+    opacity: 1;
+    outline: none;
+    filter: brightness(100);
+    text-stroke-color: transparent;
+    
+    -webkit-transition: opacity 0.2s ease-in-out 0s;
+    -moz-transition: opacity 0.2s ease-in-out 0s;
+    -o-transition: opacity 0.2s ease-in-out 0s;
+    transition: opacity 0.2s ease-in-out 0s;
+    
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#aboutMePic
+{
+    background-image: url(/misc/profiless.jpg);
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    border-radius: 90px;
+    border: 2px solid #ff3b3f;
+}
+
+#aboutMeText
+{
+    font-size: 18px;
+/*    color: #00cfff;*/
+    color: #ffffff;
+    background: #ff3b3f;
+    text-align: center;
+}
+
+#contactMeDiv
+{
+    width: 100%;
+    text-align: center;
+}
+
+#contactMe
+{
+    color: #00cfff;
+    text-decoration: none;
+    font-size: 30px;
+    
+    -webkit-transition: color 0.7s ease-in-out 0s;
+    -moz-transition: color 0.7s ease-in-out 0s;
+    -o-transition: color 0.7s ease-in-out 0s;
+    transition: color 0.7s ease-in-out 0s;
+}
+
+#contactMe:hover
+{
+    color: #ff3b3f;
+    
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    -o-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+@media (max-width: 780px)
+{
+    .navbar-branded .navbar-brand
+    {
+        right: 10em;
+    }
+}
